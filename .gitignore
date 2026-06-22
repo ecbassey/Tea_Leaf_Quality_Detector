@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+
+tea_dataset/
+augmented_dataset/
+
+*.h5
+*.keras
+*.pkl
+
+.ipynb_checkpoints/
