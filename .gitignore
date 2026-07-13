@@ -1,8 +1,10 @@
 venv/
 __pycache__/
 
-tea_dataset/
-augmented_dataset/
+tea_dataset_resized/
+tea_processed_border/
+images/
+output/
 
 *.h5
 *.keras
