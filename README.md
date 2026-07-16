@@ -7,7 +7,7 @@ To develop an intelligent deep learning-based system that automatically classifi
 ## Problem Statements
 Tea quality is highly dependent on the maturity and health of harvested leaves. Traditionally, tea leaf grading is performed manually, making the process time-consuming, subjective, and prone to inconsistencies. Incorrect classification of leaf quality can reduce the value of the final product, while the inclusion of diseased leaves can negatively affect tea quality and processing outcomes.
 
-To address these challenges, there is a need for an automated and reliable system that can accurately assess tea leaf quality and identify diseased leaves. This project proposes the development of a Tea Quality Detection and Intelligence System using Convolutional Neural Networks (CNNs) and transfer learning models to classify tea leaves into 5 categories: Highest quality, Good quality, Average Quality, Bad Quality and Diseased. The system will provide quality assessments and recommendations to support more efficient and consistent tea grading and decision-making.
+To address these challenges, there is a need for an automated and reliable system that can accurately assess tea leaf quality and identify diseased leaves. This project proposes the development of a Tea Quality Detection and Intelligence System using Convolutional Neural Networks (CNNs) and transfer learning models to classify tea leaves into 4 categories: Highest quality, Good quality, Average Quality, Bad Quality and Diseased. The system will provide quality assessments and recommendations to support more efficient and consistent tea grading and decision-making.
 
 ________________________________________
 
