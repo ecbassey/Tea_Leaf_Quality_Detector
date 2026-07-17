@@ -8,8 +8,8 @@ joblib
 tensorflow
 keras
 scikit-learn
-imbalanced-learn
 seaborn
 tqdm
 imagehash
 opencv-python
+os

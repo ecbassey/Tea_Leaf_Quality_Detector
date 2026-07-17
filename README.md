@@ -15,14 +15,13 @@ ________________________________________
 ## Full System Overview
 - **Quality Recommendation:** would give outputs like, Highest quality, Average quality, Diseased leaves etc.
 - **Dashboard:** Presents classification results, confidence scores, recommendations, and model performance
-- **Batch Image Processing** (if available)
 - **Model Comparison Module**
 
 
 ### Key Components
 - **System Objective:** Provide quality recommendations and quality analytics to support decision-making in tea production.
 - **Deep Learning:** Multi-class image classification of tea leaf quality using Convolutional Neural Networks (CNNs). Predict the quality of tea leaves from images.
-- **Web Interface:** Streamlit or Roboflow **
+- **Web Interface:** Streamlit
 - **Reporting Module:** Presents results in a clear and understandable format.
 
 
