@@ -36,10 +36,11 @@ ___________________________________________
 - Scikit-learn
 - NumPy / Pandas
 - OpenCV
+- Python
 
 **Web Interface**
 - Streamlit
-- Roboflow
+
 
 ____________________________________________
 
@@ -111,3 +112,15 @@ ____________________________________________
               │ • Analytics & Reports    │
               └──────────────────────────┘
 
+__________________________________
+
+## Metrics
+
+Model Metrics
+
+| Metric | Precision | Recall | F1-Score | Support |
+|:-------|----------:|-------:|---------:|--------:|
+| Average_quality | 0.71 | 0.76 | 0.74 | 101 |
+| Diseased | 0.97 | 0.97 | 0.97 | 124 |
+| Not_good_for_tea | 0.75 | 0.78 | 0.76 | 104 |
+| Good_quality | 0.82 | 0.75 | 0.78 | 126 |
