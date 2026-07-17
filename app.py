@@ -340,7 +340,7 @@ col1, col2 = st.columns(2, gap="large")
 card_style = """
 <style>
 .model-card {
-    background-color: #043927;
+    background-color: #222021;
     border: 1px solid #2d333b;
     border-radius: 14px;
     padding: 20px;
@@ -486,7 +486,7 @@ st.markdown("""
     font-weight: 500;
     padding: 20px;
     border-radius: 12px;
-    border-left: 6px solid #043927;
+    border-left: 6px solid #222021;
     line-height: 1.8;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
