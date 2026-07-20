@@ -5,22 +5,22 @@ To develop an intelligent deep learning-based system that automatically classifi
 
 
 ## Problem Statements
-Tea quality is highly dependent on the maturity and health of harvested leaves. Traditionally, tea leaf grading is performed manually, making the process time-consuming, subjective, and prone to inconsistencies. Incorrect classification of leaf quality can reduce the value of the final product, while the inclusion of diseased leaves can negatively affect tea quality and processing outcomes.
+Tea quality is highly dependent on the maturity and health of harvested leaves. Traditionally, tea leaf grading is performed manually, making the process time-consuming, subjective, and prone to inconsistencies. Incorrect classification of leaf quality **(especially High Quality Leaves)** can reduce the value of the final product, while the inclusion of diseased leaves can negatively affect tea quality and processing outcomes.
 
-To address these challenges, there is a need for an automated and reliable system that can accurately assess tea leaf quality and identify diseased leaves. This project proposes the development of a Tea Quality Detection and Intelligence System using Convolutional Neural Networks (CNNs) and transfer learning models to classify tea leaves into 4 categories: Highest quality, Good quality, Average Quality, Bad Quality and Diseased. The system will provide quality assessments and recommendations to support more efficient and consistent tea grading and decision-making.
+To address these challenges, there is a need for an automated and reliable system that can accurately assess tea leaf quality and identify **High Quality** leaves. This project proposes the development of a Tea Quality Detection and Intelligence System using Convolutional Neural Networks (CNNs) and transfer learning models to classify tea leaves into 4 categories: **Highest quality, Average Quality, Bad Quality and Diseased.** The system will provide quality assessments and recommendations to support more efficient and consistent tea grading and decision-making.
 
 ________________________________________
 
 
 ## Full System Overview
 - **Quality Recommendation:** would give outputs like, Highest quality, Average quality, Diseased leaves etc.
-- **Dashboard:** Presents classification results, confidence scores, recommendations, and model performance
-- **Model Comparison Module**
+- **Dashboard:** Presents classification results, confidence scores, recommendations, and model performance.
+- **Model Comparison:** Models would be compared.
 
 
 ### Key Components
 - **System Objective:** Provide quality recommendations and quality analytics to support decision-making in tea production.
-- **Deep Learning:** Multi-class image classification of tea leaf quality using Convolutional Neural Networks (CNNs). Predict the quality of tea leaves from images.
+- **Deep Learning:** Multi-class image classification of tea leaf quality using Convolutional Neural Networks (CNNs) and Transfer Learning. Predict the quality of tea leaves from images.
 - **Web Interface:** Streamlit
 - **Reporting Module:** Presents results in a clear and understandable format.
 
@@ -113,10 +113,12 @@ ____________________________________________
 
 __________________________________
 
-## Setup Instructions
+## Usage/Setup Instructions
 
-- 
-
+- Open Prediction Page in Streamlit **
+- Upload an Image to Make prediction
+- Click on the prediction button below the picture
+- View the results.
 
 ____________________________
 

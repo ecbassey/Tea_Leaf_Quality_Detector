@@ -20,13 +20,149 @@ st.markdown("""
 # PAGE CONFIGURATION
 # ------------------------------------
 st.set_page_config(
-    page_title="Dataset Analytics",
+    page_title="Dataset",
     page_icon="🍃",
     layout="wide"
 )
 
+
+# ---------------------------------------------------
+# TITLE
+# ---------------------------------------------------
+
 st.markdown(
-    "<h2 style='color:#ffffff;'>Dataset Analytics</h2>",
+    "<h1 style='color:#ffffff;'>Data Analysis & Dashboard</h1>",
+    unsafe_allow_html=True
+)
+st.markdown("---")
+
+
+st.markdown("""
+<h3 style='text-align:left; color:#ffffff;'>
+Global Tea Industry Overview
+</h3>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<p style="
+font-size:18px;
+color:#000000;
+text-align:left;
+">
+Tea is one of the world's most valuable agricultural commodities,
+supporting millions of farmers and contributing significantly to the global economy.
+</p>
+""", unsafe_allow_html=True)
+
+# ---------------------------------------------------
+# METRICS
+# ---------------------------------------------------
+
+col1, col2, col3, col4 = st.columns(4)
+
+col1.metric(
+    "Production Value",
+    "US$17B+"
+)
+
+col2.metric(
+    "Global Tea Trade",
+    "US$9.5B"
+)
+
+col3.metric(
+    "World Production",
+    "7.05M Tonnes"
+)
+
+col4.metric(
+    "People Employed",
+    "13M+"
+)
+
+st.divider()
+
+
+
+# ---------------------------------------------------
+# CHARTS
+# ---------------------------------------------------
+
+col1, col2 = st.columns(2)
+
+# Production Share
+with col1:
+
+    st.subheader("Global Tea Production Share")
+
+    production = pd.DataFrame({
+        "Country": [
+            "China",
+            "India",
+            "Kenya",
+            "Others"
+        ],
+        "Share": [
+            53,
+            18,
+            8.5,
+            20.5
+        ]
+    })
+
+    fig, ax = plt.subplots(figsize=(6,5))
+
+    ax.bar(
+        production["Country"],
+        production["Share"]
+    )
+
+    ax.set_ylabel("Percentage (%)")
+    ax.set_ylim(0,60)
+
+    for i, value in enumerate(production["Share"]):
+        ax.text(i, value+1, f"{value}%", ha='center', fontsize=10)
+
+    st.pyplot(fig)
+
+
+# Employment
+with col2:
+
+    st.subheader("Tea Sector Employment")
+
+    employment = pd.DataFrame({
+        "Category":[
+            "Smallholder Farmers",
+            "Others"
+        ],
+        "Value":[
+            60,
+            40
+        ]
+    })
+
+    fig, ax = plt.subplots(figsize=(6,5))
+
+    ax.pie(
+        employment["Value"],
+        labels=employment["Category"],
+        autopct="%1.1f%%",
+        startangle=90
+    )
+
+    ax.set_title("Tea Produced by Smallholders")
+
+    st.pyplot(fig)
+
+st.divider()
+
+
+#--------------------------------
+# Dataset
+# -----------------------------------------
+st.markdown(
+    "<h3 style='color:#ffffff;'>Dataset</h3>",
     unsafe_allow_html=True
 )
 
@@ -202,116 +338,3 @@ for cls in classes:
 
 st.markdown("---")
 
-# =================================================
-# Augmented IMAGES
-# =================================================
-
-
-st.markdown(
-    "<h3 style='color:#ffffff;'>Image Augmentation</h3>",
-    unsafe_allow_html=True
-)
-
-
-st.markdown(
-    """
-    <p style="color:#000000; font-size:18px;">
-        Data augmentation techniques expand the training set to improve model generalization and reduce overfitting.
-    </p>
-    """,
-    unsafe_allow_html=True
-)
-
-
-import streamlit as st
-
-st.markdown("""
-<style>
-
-.section-card{
-    background:#1b1f24;
-    border:1px solid #30363d;
-    border-radius:15px;
-    padding:25px;
-    margin-top:20px;
-}
-
-.main-title{
-    color:#000000;
-    font-size:22px;
-    font-weight:500;
-    margin-bottom:25px;
-}
-
-.card-title{
-    color:#000000;
-    font-size:20px;
-    font-weight:500;
-    margin-bottom:10px;
-}
-
-.card-text{
-    color:#000000;
-    font-size:18px;
-    line-height:1.5;
-}
-
-</style>
-""", unsafe_allow_html=True)
-
-#st.markdown('<div class="section-card">', unsafe_allow_html=True)
-
-st.markdown("""
-<div class="main-title">
-Why Augmentation Matters
-</div>
-""", unsafe_allow_html=True)
-
-col1, col2, col3 = st.columns(3, gap="large")
-
-with col1:
-    st.markdown("""
-    <div class="card-title">Expand Dataset</div>
-
-    <div class="card-text">
-    Generates multiple variations of each tea leaf image, 
-    increasing the amount of training data without collecting new images.
-    </div>
-    """, unsafe_allow_html=True)
-
-with col2:
-    st.markdown("""
-    <div class="card-title">Reduce Overfitting</div>
-
-    <div class="card-text">
-    Prevents the model from memorizing the training images, 
-                encouraging it to learn generalizable features such as leaf texture, 
-                vein patterns, discoloration, and disease symptoms.
-    </div>
-    """, unsafe_allow_html=True)
-
-with col3:
-    st.markdown("""
-    <div class="card-title">Increases robustness</div>
-
-    <div class="card-text">
-    Simulates real-world conditions where images may be captured from different camera angles, 
-    distances, or lighting environments.
-    </div>
-    """, unsafe_allow_html=True)
-
-st.markdown("</div>", unsafe_allow_html=True)
-
-
-
-# st.markdown(
-#     "<h3 style='color:#000000;'>Before vs After Augmentation</h3>",
-#     unsafe_allow_html=True
-# )
-st.image("images/augmented.png",  use_container_width=True)
-# =================================================
-# DATASET SUMMARY
-# =================================================
-
-
-st.caption("Tea Leaf Quality Detection and Intelligence System")

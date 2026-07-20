@@ -71,7 +71,7 @@ st.markdown("---")
 # ------------------------------------
 
 st.markdown(
-    "<h3 style='color:#000000;'>PROJECT OVERVIEW</h3>",
+    "<h3 style='color:#ffffff;'>PROJECT OVERVIEW</h3>",
     unsafe_allow_html=True
 )
 
@@ -438,34 +438,6 @@ with col2:
 
 
 
-
-
-# ------------------------------------
-# PROJECT OBJECTIVES
-# ------------------------------------
-
-st.markdown(
-    "<h3 style='color:#ffffff;'><br>Project Objectives</h3>",
-    unsafe_allow_html=True
-)
-
-
-st.markdown("""
-<div style="
-    color: #000000;
-    font-size: 20px;
-    line-height: 1.8;
-">
-<ul>
-    <li>Develop an intelligent tea leaf classification system.</li>
-    <li>Detect diseased tea leaves automatically.</li>
-    <li>Compare multiple Deep Learning architectures.</li>
-    <li>Explain predictions using Grad-CAM.</li>
-    <li>Build an interactive analytics dashboard.</li>
-    <li>Improve consistency in tea quality assessment.</li>
-</ul>
-</div>
-""", unsafe_allow_html=True)
 
 # ------------------------------------
 # TECHNOLOGIES
