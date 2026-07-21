@@ -2,14 +2,11 @@ streamlit
 pandas
 numpy
 matplotlib
-geopandas
 plotly
 joblib
 tensorflow
-keras
 scikit-learn
 seaborn
 tqdm
 imagehash
-opencv-python
-os
+opencv-python-headless
