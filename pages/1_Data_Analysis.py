@@ -162,7 +162,7 @@ st.divider()
 # Dataset
 # -----------------------------------------
 st.markdown(
-    "<h3 style='color:#ffffff;'>Dataset</h3>",
+    "<h2 style='color:#ffffff;'>Dataset Statistics</h2>",
     unsafe_allow_html=True
 )
 

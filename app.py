@@ -344,7 +344,7 @@ card_style = """
     border: 1px solid #2d333b;
     border-radius: 14px;
     padding: 20px;
-    height: 260px;
+    height: 300px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.25);
 }
 
@@ -429,7 +429,7 @@ with col2:
         <div class="model-title-red">ResNet-50</div>
         <div class="model-text">
             Performed poorly on this dataset. The model has essentially collapsed into
-            predicting one class ("Not_good_for_tea") for almost every image, 
+            predicting one class ("Not good") for almost every image, 
                 meaning it failed to learn meaningful class features.
                 This could suggest that the model was undertrained.                  
         </div>
