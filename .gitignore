@@ -1,13 +1,13 @@
 venv/
 __pycache__/
 
-tea_dataset_resized/
+- tea_dataset_resized/
 tea_processed_border/
 images/
 output/
 
 *.h5
-*.keras
+- *.keras
 *.pkl
 
 .ipynb_checkpoints/
