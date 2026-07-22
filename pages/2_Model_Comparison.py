@@ -52,7 +52,22 @@ with col1:
     st.image("images/models_accuracy3.png", caption="Model Performance", use_container_width=True)
 
 with col2:
-    st.text("")
+    st.markdown("""
+    <p style="
+        font-size:18px;
+        color:#000000;
+        line-height:1.4;
+        text-align:justify;
+    ">
+    Accuracy was not the only factor considered when selecting the final model.
+    Although MobileNetV2 achieved a slightly higher validation accuracy, the CNN
+    produced better classification results for good quality tea leaves, as shown
+    by the confusion matrix and classification report. Because identifying
+    high-quality leaves is the primary objective of this project, the CNN was
+    chosen as the final model.
+    </p>
+    """, unsafe_allow_html=True)
+
 
 
 st.markdown("---")

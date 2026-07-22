@@ -140,3 +140,7 @@ Model Metrics
 | Diseased | 0.97 | 0.97 | 0.97 | 124 |
 | Not_good_for_tea | 0.75 | 0.78 | 0.76 | 104 |
 | Good_quality | 0.82 | 0.75 | 0.78 | 126 |
+
+_____________________
+
+Author: Enobong Bassey

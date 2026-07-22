@@ -67,9 +67,64 @@ st.markdown(
 )
 st.markdown("---")
 # ------------------------------------
+# Title
+# ------------------------------------
+import streamlit as st
+
+st.markdown("""
+<style>
+
+.title{
+    font-size:40px;
+    font-weight:bold;
+    color:#ffffff;
+    text-align:center;
+}
+
+.subtitle{
+    font-size:22px;
+    color:gray;
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.label{
+    font-size:24px;
+    font-weight:bold;
+    color:#000000;
+}
+
+.value{
+    font-size:24px;
+    color:white;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown('<p class="title">Capstone Project Presentation</p>',
+            unsafe_allow_html=True)
+
+
+st.divider()
+
+left, right = st.columns([1,2])
+
+with left:
+    st.markdown('<p class="label">Student</p>', unsafe_allow_html=True)
+    st.markdown('<p class="label">Institution</p>', unsafe_allow_html=True)
+    st.markdown('<p class="label">Date</p>', unsafe_allow_html=True)
+
+with right:
+    st.markdown('<p class="value">Enobong Bassey</p>', unsafe_allow_html=True)
+    st.markdown('<p class="value">Zindua School</p>', unsafe_allow_html=True)
+    st.markdown('<p class="value">July 2026</p>', unsafe_allow_html=True)
+
+
+# ------------------------------------
 # PROJECT OVERVIEW
 # ------------------------------------
-
+st.markdown("---")
 st.markdown(
     "<h3 style='color:#ffffff;'>PROJECT OVERVIEW</h3>",
     unsafe_allow_html=True

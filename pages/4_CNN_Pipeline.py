@@ -104,7 +104,7 @@ steps = [
 ("8. ReLU Activation","Keeps important activations."),
 ("9. Max Pooling","Further reduces dimensionality."),
 ("10. Convolution Block 3","Detects disease spots, discoloration and damaged edges."),
-("11. Global Average Pooling","Converts feature maps into a compact feature vector."),
+("11. Flatten", "Converts the extracted feature maps into a one-dimensional feature vector."),
 ("12. Dense Layers","Combines learned features for classification."),
 ("13. Softmax Layer","Calculates probabilities for each tea leaf class.")
 ]
