@@ -11,6 +11,11 @@ To address these challenges, there is a need for an automated and reliable syste
 
 ________________________________________
 
+### Website
+https://ecbassey-tea-leaf-quality-detector-app-milaox.streamlit.app/
+
+____________________________________________
+
 
 ## Full System Overview
 - **Quality Recommendation:** would give outputs like, Highest quality, Average quality, Diseased leaves etc.
@@ -114,6 +119,8 @@ ____________________________________________
 __________________________________
 
 ## Usage/Setup Instructions
+
+Open website: https://ecbassey-tea-leaf-quality-detector-app-milaox.streamlit.app/
 
 - Open Prediction Page in Streamlit **
 - Upload an Image to Make prediction
