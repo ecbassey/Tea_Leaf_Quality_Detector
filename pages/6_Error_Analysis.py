@@ -136,7 +136,8 @@ col2.metric("Average confidence (Correct)", "87%")
 
 col3.metric("Average confidence (Wrong)", "65%")
 
-#st.markdown("---")
+st.markdown("The model is generally more confident when it is correct than when it is wrong.")
+st.markdown("---")
 
 
 
@@ -151,6 +152,7 @@ st.markdown(
 )
 
 st.image("images/confidence_chart.png",  use_container_width=True)
+st.markdown("Most correct predictions have very high confidence (0.95–1.00).")
 
 st.markdown(
     "<h4 style='color:#000000;'>Confidence by class</h4>",
@@ -246,9 +248,8 @@ Suggested Improvements
     <li>Collect more training images.</li>
     <li>Increase the diversity of images (lighting, backgrounds, and angles).</li>
     <li>Apply stronger or more targeted data augmentation.</li>
-    <li>Fine-tune more layers of MobileNetV2.</li>
+    <li>Fine-tune more layers</li>
     <li>Experiment with different learning rates (e.g., 0.0001–0.0003).</li>
-    <li>Use a higher image resolution if computationally feasible.</li>
     <li>Apply image segmentation to isolate the tea leaf from the background.</li>
 </ul>
 
